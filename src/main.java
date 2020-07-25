@@ -1,16 +1,19 @@
-import Arrays.MyArray;
+import LinkedList.MyLinkedList;
 
 import java.util.Arrays;
 
 public class main {
     public static void main(String[] args) {
-        MyArray numbers = new MyArray(5);
-        numbers.insert(3);
-        numbers.insert(3);
-        numbers.insert(6);
-        numbers.insert(30);
-//        numbers.printArray();
-        numbers.reverse();
+        MyLinkedList list = new MyLinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addLast(40);
+        list.addLast(50);
+        System.out.println(list.getKthElement(1));
+        System.out.println(list.printList());
+
+
     }
 
 
